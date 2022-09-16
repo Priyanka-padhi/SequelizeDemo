@@ -58,8 +58,7 @@ const getAllReviews = async (req,res)=>{
         const reviews = await Review.findAll({});
         res.status(200).send(reviews);
         console.log("OK All Reviews: ",reviews);
-        // console.log(reviews.every(review => review instanceof Review)); // true
-        // console.log("All Reviews:", JSON.stringify(reviews, null, 2));
+
     }
     catch (error){
         console.log("Error occured in rating");
